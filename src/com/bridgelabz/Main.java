@@ -7,14 +7,15 @@ public class Main {
 
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the power value (from 0 to 30) N= ");
+        System.out.println("Enter the Nth value= ");
         int N = sc.nextInt();
 
-        for(int i = 0; i < N; i++) {
-            double a = Math.pow(2, i);
+        double a = 0;
+        for (double i = 1; i <= N; i++) {
+            a = (a + (1 / i));
             System.out.println(a);
         }
-
+        System.out.println("The Nth harmonic value= "+a);
     }
 }
 
