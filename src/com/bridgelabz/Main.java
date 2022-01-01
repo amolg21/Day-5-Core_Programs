@@ -7,15 +7,24 @@ public class Main {
 
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the Nth value= ");
-        int N = sc.nextInt();
+        System.out.println("Enter the first number (a)= ");
+        double a = sc.nextDouble();
 
-        double a = 0;
-        for (double i = 1; i <= N; i++) {
-            a = (a + (1 / i));
-            System.out.println(a);
+        System.out.println("Enter the second number (b)= ");
+        double b = sc.nextDouble();
+
+        System.out.println("Enter the third number (c)= ");
+        double c = sc.nextDouble();
+
+        if (a > b && a > c) {
+            System.out.println("number a is greater among three numbers");
         }
-        System.out.println("The Nth harmonic value= "+a);
+        else if ( b > c) {
+            System.out.println("number b is greater among three numbers");
+        }
+        else {
+            System.out.println("number c is greater among three numbers");
+        }
     }
 }
 
