@@ -7,15 +7,14 @@ public class Main {
 
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the year (four digit only)= ");
-        int year = sc.nextInt();
+        System.out.println("Enter the power value (from 0 to 30) N= ");
+        int N = sc.nextInt();
 
-        if (year % 4 == 0) {
-            System.out.println("This is a leap year");
-
-        } else {
-            System.out.println("Not a leap year");
+        for(int i = 0; i < N; i++) {
+            double a = Math.pow(2, i);
+            System.out.println(a);
         }
+
     }
 }
 
