@@ -7,15 +7,19 @@ public class Main {
 
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the number= ");
-        double num = sc.nextDouble();
+        // Before Swapping
+        System.out.println("Enter the first number= ");
+        float num1 = sc.nextFloat();
 
-        if ((num % 2) == 0) {
-            System.out.println("The number is even");
-        }
-        else {
-            System.out.println("The number is odd");
-        }
+        System.out.println("Enter the second number= ");
+        float num2 = sc.nextFloat();
+
+        float temp = num1;
+              num1 = num2;
+              num2 = temp;
+
+        // After Swapping
+        System.out.println("After swapping, the numbers are= "+num1 +" and "+num2);
 
     }
 }
