@@ -5,21 +5,18 @@ public class Main {
 
     public static void main(String[] args) {
 
-
         Scanner sc = new Scanner(System.in);
-        // Before Swapping
-        System.out.println("Enter the first number= ");
-        float num1 = sc.nextFloat();
+        System.out.println("Enter the value (Dividend)= ");
+        Float a = sc.nextFloat();
 
-        System.out.println("Enter the second number= ");
-        float num2 = sc.nextFloat();
+        System.out.println("Enter the value (Divisor)= ");
+        Float b = sc.nextFloat();
 
-        float temp = num1;
-              num1 = num2;
-              num2 = temp;
+        Float Quotient = ( a/b );                  // Quotient = Dividend / Divisor
+        System.out.println("Value of Quotient is " +Quotient);
 
-        // After Swapping
-        System.out.println("After swapping, the numbers are= "+num1 +" and "+num2);
+        Float Remainder = a -( b * Quotient );     // Remainder = Dividend - ( Divisor * Quotient )
+        System.out.println("Value of Remainder is " +Remainder);
 
     }
 }
