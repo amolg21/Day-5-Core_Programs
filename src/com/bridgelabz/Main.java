@@ -6,20 +6,22 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the value (Dividend)= ");
-        Float a = sc.nextFloat();
+        System.out.println("Enter the Alphabet= ");
 
-        System.out.println("Enter the value (Divisor)= ");
-        Float b = sc.nextFloat();
+        // Alphabet input from user
+        char alphabet = sc.next().charAt(0);
+        if (alphabet == 'a' || alphabet == 'e' || alphabet == 'i' || alphabet == 'o' || alphabet == 'u' || alphabet == 'A'
+                || alphabet == 'E' || alphabet == 'I' || alphabet == 'O' || alphabet == 'U') {
 
-        Float Quotient = ( a/b );                  // Quotient = Dividend / Divisor
-        System.out.println("Value of Quotient is " +Quotient);
+            System.out.println(alphabet + " is Vowel");
+    }   else
 
-        Float Remainder = a -( b * Quotient );     // Remainder = Dividend - ( Divisor * Quotient )
-        System.out.println("Value of Remainder is " +Remainder);
-
+    {
+        System.out.println(alphabet + " is consonant");
+    }
     }
 }
+
 
 
 
