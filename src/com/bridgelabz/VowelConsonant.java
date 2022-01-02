@@ -1,7 +1,7 @@
 package com.bridgelabz;
 import java.util.Scanner;
 
-public class Main {
+public class VowelConsonant {
 
     public static void main(String[] args) {
 
